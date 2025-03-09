@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
 const routes = [
-    {
+    /*{
         path: '/',
         name: 'Main',
         component : () => import('@/layouts/LoginLayout'),
@@ -24,9 +24,9 @@ const routes = [
                 component: () => import('@/views/pages/auth/Login'),
             }
         ]
-    },
+    },*/
     {
-        path: '/alarm',
+        path: '/',
         name: 'AlarmPage',
         component : () => import('@/layouts/PageLayout'),
         children : [
