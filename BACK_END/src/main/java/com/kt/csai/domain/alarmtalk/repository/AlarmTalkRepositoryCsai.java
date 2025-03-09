@@ -13,7 +13,6 @@ import org.springframework.stereotype.Repository;
 	
 import com.kt.csai.domain.alarmtalk.entity.AlarmTalkId;
 import com.kt.csai.domain.alarmtalk.entity.AlarmTalkSendCsai;
-import com.kt.csai.domain.alarmtalk.entity.AlarmTalkSendGW;
 	
 @Repository
 public interface AlarmTalkRepositoryCsai extends JpaRepository<AlarmTalkSendCsai, AlarmTalkId> {
@@ -26,7 +25,7 @@ public interface AlarmTalkRepositoryCsai extends JpaRepository<AlarmTalkSendCsai
 	                "      A.job_execution_id,              				" +
 	                "      A.status,                        				" + 
 	                "      A.exit_code,                     				" + 
-	                "      A.exit_message,                 					" + 
+	                "      A.exit_message                 					" + 
 	                "  FROM tb_interface_failed A           				" +             
 	                " WHERE 1=1                             				" +
 	                "   and TO_CHAR(start_time, 'YYYY-MM-DD') = :startDt 	" +
