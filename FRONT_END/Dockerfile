@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN npm install && chmod -R 777 node_modules
 
 # Copy source code
-COPY . ./
+COPY . .
 
 #Ensure vue-cli-service is ececutable
 RUN chmod +x node_modules/.bin/vue-cli-service
